@@ -1,0 +1,477 @@
+@font-face {
+    font-family: a;
+    src: url(./font/LYjYdG7kmE0gV69VVPPdFl06VN8lG4S11zM.woff2);
+}
+
+
+:root {
+    --hover-color: #FEC303;
+    --background-color: #131619;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.page1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(images/main-banner-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.navbar {
+    position: sticky;
+
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+
+.navbar a h3 {
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-family: a;
+    font-size: 1.4vw;
+}
+
+.navbar a :hover {
+    color: #FEC303;
+}
+
+.navbar .logo {
+    width: 200px;
+    margin-left: 2vw;
+}
+
+
+.navbar .middle {
+    display: flex;
+    gap: 3vw;
+}
+
+.right {
+    margin-right: 2vw;
+    display: flex;
+    gap: 1.2vw;
+}
+
+.right i {
+    color: white;
+    font-size: 1.7vw;
+
+
+}
+
+.right i:hover {
+    color: var(--hover-color);
+}
+
+.quote {
+    position: relative;
+
+    top: 10vw;
+    left: 15vw;
+}
+
+.quote h1 {
+    font-family: a;
+    font-size: 6vw;
+    line-height: 1;
+    font-weight: 1;
+}
+
+.quote button {
+    background-color: #FEC303;
+    padding: .7vw 2vw;
+    color: #131619;
+    font-size: 1.2vw;
+    border: none;
+}
+
+.quote button:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.page2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.page2 h1 {
+    padding-top: 150px;
+    text-align: center;
+    font-size: 4vw;
+    font-family: a;
+    font-weight: 200;
+}
+
+.page2>p {
+    text-align: center;
+    width: 800px;
+    font-size: 1.4vw;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.574);
+}
+
+
+.page2 .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.card-container .card {
+    width: 300px;
+    height: 300px;
+    background-color: #1B2126;
+}
+
+
+
+.card-container .card img {
+    display: block;
+    width: 100px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.card-container .card h2 {
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: a;
+    letter-spacing: .5px;
+    font-weight: 1;
+    font-size: 25px;
+}
+
+.card-container .card p {
+    font-size: 19px;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+}
+
+
+.card-container .card:hover {
+    background-color: #fec3039c;
+    cursor: pointer;
+}
+
+
+
+
+.page3 {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    background-color: var(--background-color);
+}
+
+.page3 h1 {
+    font-family: a;
+    font-size: 4vw;
+    font-weight: 1;
+    text-align: center;
+}
+
+.page3 p {
+    font-size: 1.4vw;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 50vw;
+    font-weight: 100;
+
+}
+
+
+
+.page-3-card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.page3-card {
+    width: 400px;
+    height: 410px;
+    background-color: #1B2126;
+    margin: 2vw 0;
+    overflow: hidden;
+}
+
+.page3-card img {
+    height: 100%;
+    width: 100%;
+    transition: all ease-in-out .5s;
+}
+
+.page-3-card-container .page3-card:hover img {
+    scale: 1.09;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+
+
+.page-4 {
+    width: 100vw;
+    height: 40vh;
+    background-color: #1B2126;
+    position: relative;
+}
+
+.page-4 .container {
+    padding: 100px 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.page5{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+
+.page5 h1{
+    font-family: a;
+    font-size: 4vw;
+    font-weight: 1;
+    text-align: center;
+    padding-top: 4vw;
+
+}
+
+
+.page5 p{
+    width: 55vw;
+    text-align: center;
+    margin: 0 auto  ;
+    font-size: 1.3vw;
+}
+
+
+.page5 .trainer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2vw;
+}
+
+.page5 .trainer-card{
+    width: 350px;
+    height: 450px;
+
+overflow: hidden;
+}
+
+.page5 .trainer-card .image{
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+
+.page5 .trainer-card img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+
+.page5 .trainer-card img:hover{
+    scale: 1.05;
+}
+
+.page5 .trainer-card>   h2{
+    font-family: a;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.page5 .trainer-card:hover h2{
+color: #FEC303;
+}
+
+
+
+.page5 .trainer-card>p{
+    text-align: center;
+    width: 100%;
+    font-weight: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.page6{
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--background-color);
+}
+
+.page6 h1{
+    font-family: a;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 1;
+    text-align: center;
+ padding-top: 4vw;
+}
+
+
+
+.page6 p{
+    width: 55vw;
+    text-align: center;
+    margin: 0 auto  ;
+    font-size: 1.3vw;
+}
+
+.page6 .pricing-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pricing-card-container .card{
+    width: 430px;
+    height: 520px;
+    background-color: #1B2126;
+    margin: 2vw 0;
+    transition: .5s;
+}
+
+.pricing-card-container .card:hover{
+    background-color: #FEC303;
+
+}
+
+.pricing-card-container .card:hover p{
+    color: black;
+}
+
+.pricing-card-container .card:hover h1{
+    color: black;
+}
+.pricing-card-container .card:hover h2{
+    color: black;
+}
+
+.pricing-card-container .card:hover span{
+    color: black;
+}
+
+
+
+.pricing-card-container .billed{
+    text-align: center;
+    margin: 0;
+    margin: 1.5vw 0;
+    color: white;
+}
+
+.pricing-card-container h1{
+    margin: 0;
+    padding: 0;
+    font-family: a;
+    font-weight: 1;
+    color: #FEC303;
+}
+
+.pricing-card-container span{
+    font-size: 40px;
+    color: #FEC303;
+}
+
+.pricing-card-container h2{
+    font-size: 2vw;
+    font-family: a;
+    font-weight: 1;
+    text-align: center;
+}
+
+.pricing-card-container p{
+text-align: start;
+margin-left: 2vw;
+width: 100%;
+line-height: 2;
+color: rgba(255, 255, 255, 0.664);
+}
+
+.pricing-card-container .card button{
+    color: black    ;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3vw;
+    padding: .6vw 2vw;
+    font-size: 1vw;
+    background-color: #FEC303;
+    border: none;
+}
+
+.pricing-card-container .card:hover button{
+    background-color: #131619;
+    color: white;
+cursor: pointer;
+}
