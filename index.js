@@ -62,3 +62,48 @@ function swiper(){
   })}
 
 swiper()
+
+
+
+
+function wiper(){
+  var swiper = new Swiper(".page7 .swiper", {
+    slidesPerView: 3,
+    loop:true,
+    spaceBetween: 30,
+    direction: getDirection(),
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    on: {
+      resize: function () {
+        swiper.changeDirection(getDirection());
+      },
+    },
+  });
+
+  function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+    return direction;
+  }
+}
+
+wiper()
+
+
+function navbar(){
+  let parent = document.querySelector('.navbar').parentElement;
+
+while (parent) {
+  const hasOverflow = getComputedStyle(parent).overflow;
+  if (hasOverflow !== 'visible') {
+    console.log(hasOverflow, parent);
+  }
+  parent = parent.parentElement;
+}
+}
+
+navbar()

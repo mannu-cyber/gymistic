@@ -38,14 +38,23 @@ body {
 
 }
 
-.navbar {
-    position: sticky;
+.navbar-container{
+    position: fixed;
 
-    top: 0;
+}
+
+.main .navbar {
+ width: 100vw;
+ height: 100px;
+ position: fixed;
+ z-index: 2;
+ top: 0px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    background-color: #131619;
 }
 
 .navbar a {
@@ -464,7 +473,7 @@ color: rgba(255, 255, 255, 0.664);
     display: block;
     margin: 0 auto;
     margin-top: 3vw;
-    padding: .6vw 2vw;
+    padding: .9vw 2.2vw;
     font-size: 1vw;
     background-color: #FEC303;
     border: none;
@@ -475,3 +484,106 @@ color: rgba(255, 255, 255, 0.664);
     color: white;
 cursor: pointer;
 }
+
+
+
+
+.membership{
+    width: 100vw;
+    height: 100px;
+    background-color: #FEC303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership button{
+  background-color: #FEC303;
+  border: 2px solid black;
+    padding: .7vw 2vw;
+    color: #131619;
+    font-size: 1.1vw;
+margin: 0 1vw;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-family: a;
+}
+
+.membership button:hover{
+    cursor: pointer;
+    background-color: #131619;
+    color: #ffffff;
+}
+
+
+.page7{
+    width: 100vw;
+    min-height: 60vh;
+    background-color: var(--background-color);
+    position: relative;
+    display: flex;
+justify-content: space-around;
+line-height: 2;
+padding-top: 10vw;
+font-family: sans-serif;
+}
+
+
+.page7 h2{text-transform: uppercase;
+    font-family: a;
+    font-weight: 1;
+    font-size: 2vw;
+    
+}
+
+
+
+.page7 a{
+    text-decoration: none;
+    display: block;
+    font-size: 1.1vw;
+}
+
+
+.contact-section, .newsletter-section{
+    width: 22vw;
+}
+
+
+.page7.contact-section img{
+    display: inline-block;
+}
+
+.newsletter-section p{
+line-height: 1;
+font-size: 1.3vw;
+margin-bottom: 1vw;
+
+}
+
+.newsletter-section input{
+    padding: .7vw 1.4vw;
+    color: #131619;
+    font-size: 1.5vw;
+    border: none;
+}
+
+
+.newsletter-section button{
+    background-color: #FEC303;
+    padding: .7vw 2vw;
+    color: #131619;
+    font-size: 1.2vw;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 1vw;
+}
+
+
+
+.copyright{
+text-align: center;
+color: black;
+padding-bottom: 1vw;
+}
+
